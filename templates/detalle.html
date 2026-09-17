@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ juego.titulo }}{% endblock %}
+
+{% block content %}
+    <h1>{{ juego.titulo }}</h1>
+
+    <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-top: 20px;">
+        <p><strong>Plataforma:</strong> {{ juego.plataforma }}</p>
+        <p><strong>Precio:</strong> ${{ juego.precio }}</p>
+        <p><strong>Horas estimadas:</strong> {{ juego.horas }}</p>
+        <p><strong>Multijugador:</strong> {% if juego.multijugador %}Sí{% else %}No{% endif %}</p>
+        <p><strong>Oferta:</strong> {% if juego.oferta %}Sí{% else %}No{% endif %}</p>
+        <p><strong>Descripción:</strong> {{ juego.descripcion }}</p>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <a class="btn" href="{% url 'inicio' %}">Volver a inicio</a>
+    </div>
+{% endblock %}

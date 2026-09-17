@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Catálogo de Juegos{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #222;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        nav {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            background: #2c6bed;
+            font-weight: bold;
+        }
+        .btn.secondary {
+            background: #444;
+        }
+        h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a class="btn" href="{% url 'inicio' %}">Inicio</a>
+            <a class="btn secondary" href="{% url 'detalle' %}">Detalle</a>
+        </nav>
+
+        {% block content %}
+        <h1>Catálogo de Juegos</h1>
+        <p>Contenido principal del sitio.</p>
+        {% endblock %}
+    </div>
+</body>
+</html>
