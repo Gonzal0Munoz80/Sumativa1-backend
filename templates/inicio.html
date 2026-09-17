@@ -9,7 +9,7 @@
         <div style="border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin-bottom: 12px;">
             <h3>{{ juego.titulo }}</h3>
             <p><strong>Precio:</strong> ${{ juego.precio }}</p>
-            <a class="btn" href="{% url 'detalle' %}">Detalle</a>
+            <a class="btn" href="{% url 'detalle_juego' juego.id %}">Detalle</a>
         </div>
     {% empty %}
         <p>No hay juegos disponibles.</p>

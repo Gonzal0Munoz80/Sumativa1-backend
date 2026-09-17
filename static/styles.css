@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a 0%, #111827 35%, #1e293b 100%);
+    color: #e5e7eb;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 28px 30px 36px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(8px);
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    margin-right: 12px;
+    box-shadow: 0 8px 22px rgba(59, 130, 246, 0.25);
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(37, 99, 235, 0.45);
+}
+
+.btn.secondary {
+    background: linear-gradient(135deg, #475569, #334155);
+    box-shadow: 0 8px 18px rgba(71, 85, 105, 0.35);
+}
+
+h1 {
+    margin-top: 0;
+    color: #f8fafc;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #dbeafe;
+    line-height: 1.6;
+}
+
+.card {
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
+}
+
+.card strong {
+    color: #93c5fd;
+}
+
+.error-box {
+    border: 1px solid rgba(248, 113, 113, 0.35);
+    background: rgba(127, 29, 29, 0.2);
+    border-radius: 16px;
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: 0 12px 22px rgba(127, 29, 29, 0.15);
+}
+
